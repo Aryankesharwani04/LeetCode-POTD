@@ -27,7 +27,7 @@ To clone this repository and get solutions to the LeetCode Problem of the Day:
 3. Use the following command to clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/LeetCode-POTD.git
+   git clone git@github.com:Aryankesharwani04/LeetCode-POTD.git
    
 ## Contribution
 
