@@ -38,7 +38,7 @@ To clone this repository and get solutions to the LeetCode Problem of the Day:
 5. Finding the Solution for a Specific Day
   Once you have navigated to the correct directory:
 
-  Open the `solution.md` file to view the solution and detailed explanation for the Problem of the Day.
+    - Open the `solution.md` file to view the solution and detailed explanation for the Problem of the Day.
    
 ## Contribution
 
