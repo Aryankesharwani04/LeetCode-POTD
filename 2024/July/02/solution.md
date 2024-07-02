@@ -16,7 +16,7 @@ The approach utilizes a frequency array `freq` to count occurrences of each elem
    - Iterate through `nums1` and increment `freq[i]` for each element `i`. This records how many times each number appears in `nums1`.
 
 3. **Intersection Check**:
-   -terate through `nums2` and check each element `i`: If `freq[i] > 0`, it means `i` exists in `nums1` at least as many times as it appears in `nums2`. Add `i` to `ans` vector and decrement `freq[i]` to account for one occurrence.
+   - Iterate through `nums2` and check each element `i`. If `freq[i] > 0`, it means `i` exists in `nums1` at least as many times as it appears in `nums2`. Add `i` to `ans` vector and decrement `freq[i]` to account for one occurrence.
 
 4. **Return `ans`**:
    - `ans` contains all elements that appear in both `nums1` and `nums2`, respecting their frequencies.
