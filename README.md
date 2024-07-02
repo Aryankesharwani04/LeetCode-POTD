@@ -4,16 +4,11 @@ Welcome to the LeetCode Daily Solutions repository! This repository is dedicated
 
 ## Repository Structure
 
-- **/solutions**: Contains directories organized by year, with subdirectories for each month.
-  - **/YYYY**
-    - **/MM**
-      - **/DD-Problem-Title**
-        - **solution.cpp**: The main solution script written in C++.
-        - **README.md**: A detailed explanation of the problem, the approach taken to solve it, and any challenges faced.
-        - **test_cases.txt**: Sample input and output cases for testing the solution.
-    
-- **/resources**: Supplementary materials such as links to problem statements, articles, and other references.
-
+- **/YYYY**: Contains directories organized by year, with subdirectories for each month.
+    - **/Month**
+      - **/DD**
+        - **solution.md**: A detailed explanation of the problem, the approach taken to solve it, any challenges faced, and solution in c++.
+        
 ## Goals
 
 - **Consistency**: Aim to solve and post a solution for the daily problem every day.
