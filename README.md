@@ -36,7 +36,7 @@ To clone this repository and get solutions to the LeetCode Problem of the Day:
     cd LeetCode-POTD/2024/July/01/
 ```
 5. Finding the Solution for a Specific Day
-  Once you have navigated to the correct directory:
+      Once you have navigated to the correct directory:
 
     - Open the `solution.md` file to view the solution and detailed explanation for the Problem of the Day.
    
