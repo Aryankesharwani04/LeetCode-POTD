@@ -26,14 +26,15 @@ To clone this repository and get solutions to the LeetCode Problem of the Day:
 
 3. Use the following command to clone the repository:
 
-  ```bash
-  git clone git@github.com:Aryankesharwani04/LeetCode-POTD.git
+  ```
+      git clone git@github.com:Aryankesharwani04/LeetCode-POTD.git
+  ```
 
 4. Navigate to the directory corresponding to the year, month, and day of the problem you are interested in. For example, to find the solution for July 01, 2024:
 
-  ```bash
-  cd LeetCode-POTD/2024/July/01/
-
+```
+    cd LeetCode-POTD/2024/July/01/
+```
 5. Finding the Solution for a Specific Day
   Once you have navigated to the correct directory:
 
