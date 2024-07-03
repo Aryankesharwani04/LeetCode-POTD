@@ -9,19 +9,24 @@ Return the minimum difference between the largest and smallest value of nums aft
 
 ## Approach
 
-- As it is saying to find minimum difference of largest and smallest number in the array. To get largest and smallest why don't we sort it first.
-- Now as we have largest and smallest at last and first index respectively. To minimise the difference we have to make largest and smallest as close as possible in just 3 moves and also taking care of others while minimising difference.
-- So we have the base case here as when array size is less than 5 we are proving that it will be zero because we have atmost 3 operations to make all elements equal to some elements and their maximum and minimum will be same. 
-Let's prove above by following example 
-    -`arr = [2,3,4,4]` in our first step
-    - `2 -> 3 , 4 -> 3, 4 -> 3`
-    - `arr = [3,3,3,3]` in our second step
-    - which means our difference is `0` for all cases of array size less than 5.
-- Now we know we have atmost 3 chances to change the number. 
-- Why don't we just take largest element - 3rd index element -> thinking that we have make all the first 3 index `0, 1, 2` same to 3rd index. As array is sorted hence answer will be `last element - 4th index element` 
-- But the problem is that we have to explore all the 3 more cases that will be excluding last including 2nd and so on till we reach `0th` element. By this way we would store the minimum of all the possible cases.
-- As we have to minimise the difference we think of playing with minimising largest and smallest number to their second largest and second smallest and so on.
-- By this way we are sure that we get the minimum difference of largest and smallest number in array as we have minimised the largest and smallest to the most closest to get minimum difference.
+1. Sort the Array:
+    - To easily find the largest and smallest numbers in the array, we first sort the array. After sorting, the smallest number will be at the beginning (index 0), and the largest will be at the end (last index).
+2. Base Case:
+    - If the array size is less than 5, we can make all elements equal with at most 3 moves. Hence, the minimum difference will be 0.
+    - Example:
+    `arr = [2, 3, 4, 4]
+    Step 1: Change 2 -> 3, 4 -> 3, 4 -> 3
+    Result: arr = [3, 3, 3, 3]
+    Difference: 3 - 3 = 0`
+3. Minimize the Difference:
+    - When the array size is 5 or more, we need to consider making changes in 3 moves to minimize the difference between the largest and smallest numbers.
+    - After sorting, the array will look like this: arr = [a1, a2, a3, ..., an]
+    - We consider the following 4 scenarios:
+        - Change the first three smallest numbers to the fourth smallest: `nums[n] - nums[3]`
+        - Change the smallest two and the largest one to match the third and second largest respectively: `nums[n-1] - nums[2]`
+        - Change the smallest one and the largest two to match the second and third largest respectively: `nums[n-2] - nums[1]`
+        - Change the last three largest numbers to the fourth largest: `nums[n-3] - nums[0]`
+    - We then return the minimum difference from these four scenarios.
 
 ### Complexity
 
